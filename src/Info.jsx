@@ -40,7 +40,7 @@ export default function Info({ data }) {
         </p>
         {data.salesforceCertifications && (
           <>
-            <div className="my-6 border-b-4 border-custom-light py-2.5 dark:border-custom-dark">
+            <div className="header-title py-2.5 my-6">
               <h3 className="text-xl font-medium text-left">
                 Salesforce Certifications
               </h3>
@@ -56,7 +56,7 @@ export default function Info({ data }) {
         )}
         {data.capabilities && (
           <>
-            <div className="my-6 border-b-4 border-custom-light py-2.5 dark:border-custom-dark">
+            <div className="header-title py-2.5 my-6">
               <h3 className="text-xl font-medium text-left">Capabilities</h3>
             </div>
             <ul className="mt-4 space-y-1 space-x-2 list-disc">
@@ -70,7 +70,7 @@ export default function Info({ data }) {
         )}
         {data.tools && (
           <>
-            <div className="my-6 border-b-4 border-custom-light py-2.5 dark:border-custom-dark">
+            <div className="header-title py-2.5 my-6">
               <h3 className="text-xl font-medium text-left">Tools I Use</h3>
             </div>
             <ul className="mt-4 space-y-1 space-x-2 list-disc">
@@ -82,7 +82,7 @@ export default function Info({ data }) {
             </ul>
           </>
         )}
-        <div className="my-6 border-b-4 border-custom-light py-2.5 dark:border-custom-dark">
+        <div className="header-title py-2.5 my-6">
           <h3 className="text-xl font-medium text-left">Contact + Links</h3>
         </div>
         <div className="mt-4 space-y-4">
