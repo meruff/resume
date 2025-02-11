@@ -1,0 +1,119 @@
+{
+  "info": {
+    "firstName": "Mat",
+    "lastName": "Ruff",
+    "title": "Staff Software Engineer",
+    "company": "Built In",
+    "companyHref": "https://www.builtin.com",
+    "description": "6x certified Staff Salesforce developer specializing in custom business solutions and integrations, building mobile-first responsive designs, and Lightning UI.",
+    "salesforceCertifications": [
+      "Platform Developer I & II",
+      "JavaScript Developer I",
+      "Experience Cloud Developer",
+      "Education Cloud Consultant",
+      "Administrator"
+    ],
+    "capabilities": [
+      "Apex, Lightning Web/Aura Components SOQL/SOSL, Visualforce, JavaScript/TypeScript, React, Golang",
+      "Salesforce APIs, Integration, and Web Services",
+      "SDLC, Agile, DevOps, CD/CI"
+    ],
+    "tools": [
+      "WebStorm + Illuminated Cloud 2, VSCode",
+      "SFDX, Salesforce CLI, CumulusCI",
+      "PMD Analyzer",
+      "Git, GitHub",
+      "JIRA",
+      "Raycast",
+      "AI tools: Copilot, CodeRabbitAI, SonarCube"
+    ]
+  },
+  "bio": {
+    "education": [
+      {
+        "years": "2015-2016",
+        "degree": "M.S. Information Technology",
+        "school": "W.P. Carey School of Business at Arizona State University, Tempe, AZ"
+      },
+      {
+        "years": "2010-2013",
+        "degree": "B.S. Computer Information Systems",
+        "school": "W.P. Carey School of Business at Arizona State University, Tempe, AZ"
+      }
+    ],
+    "work": [
+      {
+        "years": "Nov 2013 - May 2016",
+        "title": "Systems Analyst - Tempe, AZ",
+        "company": "Arizona State University",
+        "description": "Developed and maintained custom Visualforce pages for various user interfaces, including Recruitment, Service, Corporate Relations, and internal users. Main projeect was a custom student Service Center portal using Salesforce Communities, Visualforce, Apex, Bootstrap, and jQuery.",
+        "projects": [
+          "Undergrad new prospect Contact entry custom Visualforce page.",
+          "View-As (log in as) a student in the Service Center.",
+          "Campaign Member Management Widget.",
+          "Financial Aid On-boarding for Bomgar Chat (Help Desk).",
+          "Single Sign-On implementation with ASU login.",
+          "Custom Case transfer page to transfer Cases to different groups within ASU.",
+          "Custom just-in-time (JIT) User Provisioning.",
+          "Custom Help Desk Visualforce Page for Case management"
+        ]
+      },
+      {
+        "years": "Jun 2016 - Aug 2016",
+        "title": "Engineer I - Scottsdale, AZ",
+        "company": "American Express Global Business Travel",
+        "description": "Worked on an agile team of developers developing an internal Salesforce Org to support organization-wide Opportunity processes."
+      },
+      {
+        "years": "Sept 2016 - Jan 2020",
+        "title": "Senior Salesforce Developer - Tempe, AZ",
+        "company": "Sierra-Cedar, Inc.",
+        "listItems": [
+          "Developed complex custom solutions for clients, spanning student recruitment, lead and opportunity processing, territory management, custom marketing tools, event and campaign solutions, RFI forms, and general business automation.",
+          "Owned and maintained several in-house accelerator applications."
+        ]
+      },
+      {
+        "years": "Feb 2020 - Jul 2021",
+        "title": "Business & Integration Architect Specialist - Remote",
+        "company": "Accenture",
+        "listItems": [
+          "Built complex custom solutions for clients in multiple industries including student financial aid automation, recruitment, event management and service as well as child welfare/foster care."
+        ]
+      },
+      {
+        "years": "Jul 2021 - Aug 2022",
+        "title": "Senior Salesforce Developer - Remote",
+        "company": "Cloud For Good",
+        "listItems": [
+          "Designed, developed, and implemented custom solutions for higher education clients using Salesforce technologies including custom Lightning Web Component, Apex, Commerce Cloud, and Digital Experiences (Communities).",
+          "Played a consistent key role in client project discovery, building, deployment, post-production maintenance and client handoff."
+        ],
+        "projects": [
+          "Custom professional certificate builder and planner site.",
+          "Custom enrolled course details and Community site.",
+          "Automatic Task creation based on Opportunity progress.",
+          "Ongoing support for multiple custom higher education implementations."
+        ]
+      },
+      {
+        "years": "Aug 2022 - Oct 2024",
+        "title": "Senior Software Engineer - Remote",
+        "company": "Built In",
+        "listItems": [
+          "Led the development and implementation of Built In's new B2B Content Studio site. Content Studio is custom-built using Salesforce's Digital Experiences Cloud and lightning web components. Read more: https://employers.builtin.com/content-studio.",
+          "Owned and maintained the Salesforce development lifecycle.",
+          "Collaborated closely with cross-functional teams to gather requirements, analyze user needs, and translate them into functional software.",
+          "Implemented regular updates and enhancements based on internal/external user feedback, ensuring the system remained current and aligned with evolving business requirements.",
+          "Completed multiple initiatives to improve and update old automation built using workflow, process builder, and legacy Apex triggers."
+        ]
+      },
+      {
+        "years": "Oct 2024 - Present",
+        "title": "Staff Software Engineer - Remote",
+        "company": "Built In",
+        "description": ""
+      }
+    ]
+  }
+}
