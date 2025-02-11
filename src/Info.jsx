@@ -7,9 +7,7 @@ export default function Info({ data }) {
     <>
       <div className="bg-gray-100 p-5 text-left dark:bg-gray-800 md:col-span-4 lg:p-14">
         <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl">
-          {data.firstName}
-          <br />
-          {data.lastName}
+          {data.firstName} {data.lastName}
         </h1>
         <h2 className="mt-3 text-xl font-bold text-custom-light dark:text-custom-dark">
           {data.title}
