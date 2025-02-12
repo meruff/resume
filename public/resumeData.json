@@ -5,7 +5,7 @@
     "title": "Staff Software Engineer",
     "company": "Built In",
     "companyHref": "https://www.builtin.com",
-    "description": "6x certified Staff Salesforce developer specializing in custom business solutions and integrations, building mobile-first responsive designs, and Lightning UI.",
+    "description": "Hi, I'm Mat 👋. I'm a Staff Salesforce Engineer with 6 certifications, based in Phoenix, Arizona. With over 10 years of experience as both a consultant and in-house developer, I specialize in building custom business solutions, seamless integrations, and mobile-friendly Lightning UI for the Salesforce platform.",
     "salesforceCertifications": [
       "Platform Developer I & II",
       "JavaScript Developer I",
@@ -22,10 +22,8 @@
       "WebStorm + Illuminated Cloud 2, VSCode",
       "SFDX, Salesforce CLI, CumulusCI",
       "PMD Analyzer",
-      "Git, GitHub",
-      "JIRA",
       "Raycast",
-      "AI tools: Copilot, CodeRabbitAI, SonarCube"
+      "Git, GitHub, JIRA"
     ]
   },
   "bio": {

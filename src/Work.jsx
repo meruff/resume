@@ -27,7 +27,7 @@ export default function Work({ data }) {
   return (
     <>
       <div className="header-title py-2.5">
-        <h3 className="text-xl font-medium text-left">Work Experience</h3>
+        <h3 className="text-xl font-medium text-left">My Work Experience</h3>
       </div>
       <ul className="relative text-left space-y-6 pl-6 before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-custom-light/20 before:content-[''] dark:before:bg-custom-dark/20">
         {data.toReversed().map((work) => (
