@@ -178,6 +178,27 @@ export default function Info({ data }) {
             </a>
           </div>
         </div>
+        <div className="mt-10">
+          <a
+            href="/Mathew_Ruff_Resume.pdf"
+            download="Mathew_Ruff_Resume.pdf"
+            className="inline-flex items-center px-6 py-3 text-white bg-custom-light rounded-lg shadow-md hover:bg-custom-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-custom-light focus:ring-opacity-75 dark:bg-custom-dark dark:hover:bg-custom-light dark:text-gray-900 dark:hover:text-gray-900"
+          >
+            <box-icon
+              name="file-pdf"
+              type="solid"
+              color="#fff"
+              className="mr-2 inline dark:hidden"
+            ></box-icon>
+            <box-icon
+              name="file-pdf"
+              type="solid"
+              color="#111827"
+              className="mr-2 hidden dark:inline"
+            ></box-icon>
+            Download Resume
+          </a>
+        </div>
       </div>
     </>
   );
