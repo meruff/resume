@@ -1,27 +1,17 @@
 export default function Work({ data }) {
   if (!data) return null;
 
-  const extractUrl = (text) => {
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    return text.match(urlRegex);
+  const convertMarkdownToAnchor = (markdown) => {
+    const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
+
+    return markdown.replace(markdownLinkRegex, (match, label, url) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    });
   };
 
-  const renderTextWithUrl = (text) => {
-    const urls = extractUrl(text);
-    if (!urls) return text;
-
-    return text.split(urls[0]).reduce((acc, part, index, array) => {
-      if (index === array.length - 1) {
-        return [...acc, part];
-      }
-      return [
-        ...acc,
-        part,
-        <a key={index} href={urls[0]} target="_blank" rel="noopener noreferrer">
-          {urls[0]}
-        </a>,
-      ];
-    }, []);
+  const renderMarkdownToAnchor = (markdown) => {
+    const htmlString = convertMarkdownToAnchor(markdown);
+    return <span dangerouslySetInnerHTML={{ __html: htmlString }} />;
   };
 
   return (
@@ -50,7 +40,7 @@ export default function Work({ data }) {
                   {work.listItems &&
                     work.listItems.map((listItem, index) => (
                       <li key={index} className="ml-2">
-                        {renderTextWithUrl(listItem)}
+                        {renderMarkdownToAnchor(listItem)}
                       </li>
                     ))}
                 </ul>
@@ -59,11 +49,13 @@ export default function Work({ data }) {
 
             {work.projects && (
               <div className="text-sm/relaxed text-gray-700 dark:text-gray-300">
-                <h2 className="mt-4 text-[1rem] font-bold">Projects</h2>
+                <h2 className="mt-4 text-[1rem] font-bold text-gray-800 dark:text-gray-100">
+                  Notable Projects
+                </h2>
                 <ul className="mt-4 space-y-1 space-x-2 list-disc">
                   {work.projects.map((project, index) => (
                     <li key={index} className="ml-2">
-                      {project}
+                      {renderMarkdownToAnchor(project)}
                     </li>
                   ))}
                 </ul>

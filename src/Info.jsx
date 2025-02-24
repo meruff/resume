@@ -67,7 +67,7 @@ export default function Info({ data }) {
           <>
             <div className="header-title py-2.5 my-6">
               <h3 className="text-xl font-medium text-left">
-                What I&apos;m Good At
+                Skills &amp; Expertise
               </h3>
             </div>
             <ul className="mt-4 ml-2 space-y-1 space-x-2 list-disc">

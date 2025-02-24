@@ -14,23 +14,23 @@
       "Administrator"
     ],
     "capabilities": [
-      "Apex, Lightning Web/Aura Components SOQL/SOSL, Visualforce, JavaScript/TypeScript, React, Golang",
-      "Salesforce APIs, Integration, and Web Services",
-      "SDLC, Agile, DevOps, CD/CI"
+      "Salesforce Development: Apex, Lightning Web Components, Visualforce SOQL/SOSL",
+      "Programming: JavaScript/TypeScript, React, Golang",
+      "Integration & APIs: Salesforce APIs,  Integration, and Web Services",
+      "DevOps & Workflow: CI/CD, Agile, SDLC, SFDX, CumulusCI, Gearset, JIRA"
     ],
     "tools": [
-      "WebStorm + Illuminated Cloud 2, VSCode",
-      "SFDX, Salesforce CLI, CumulusCI, Gearset",
-      "Git, GitHub, JIRA",
-      "PMD Analyzer, Copilot, SonarQube, CodeRabbit",
-      "Raycast"
+      "Development Environment: WebStorm + Illuminated Cloud 2, VSCode",
+      "VCS & Code Quality: Git, GitHub, PMD Analyzer",
+      "AI: Copilot, SonarQube, CodeRabbit",
+      "Workflow: Raycast"
     ]
   },
   "bio": {
     "education": [
       {
         "years": "2015-2016",
-        "degree": "M.S. Information Technology",
+        "degree": "M.S. Information Management",
         "school": "W.P. Carey School of Business at Arizona State University, Tempe, AZ"
       },
       {
@@ -44,23 +44,20 @@
         "years": "Nov 2013 - May 2016",
         "title": "Systems Analyst - Tempe, AZ",
         "company": "Arizona State University",
-        "description": "Developed and maintained custom Visualforce pages for various user interfaces, including Recruitment, Service, Corporate Relations, and internal users. Main projeect was a custom student Service Center portal using Salesforce Communities, Visualforce, Apex, Bootstrap, and jQuery.",
+        "description": "Developed and maintained custom Visualforce pages for various user interfaces, including Recruitment, Service, Corporate Relations, and internal users. Main project was a custom student Service Center portal using Salesforce Communities, Visualforce, Apex, Bootstrap, and jQuery.",
         "projects": [
-          "Undergrad new prospect Contact entry custom Visualforce page.",
-          "View-As (log in as) a student in the Service Center.",
-          "Campaign Member Management Widget.",
-          "Financial Aid On-boarding for Bomgar Chat (Help Desk).",
-          "Single Sign-On implementation with ASU login.",
-          "Custom Case transfer page to transfer Cases to different groups within ASU.",
-          "Custom just-in-time (JIT) User Provisioning.",
-          "Custom Help Desk Visualforce Page for Case management"
+          "Student Service Center",
+          "Financial Aid On-boarding for Bomgar Chat (Help Desk)",
+          "Single Sign-On implementation with ASU login",
+          "Just-in-time (JIT) User Provisioning",
+          "Case Transfer Page"
         ]
       },
       {
         "years": "Jun 2016 - Aug 2016",
         "title": "Engineer I - Scottsdale, AZ",
         "company": "American Express Global Business Travel",
-        "description": "Worked on an agile team of developers developing an internal Salesforce Org to support organization-wide Opportunity processes."
+        "description": "Worked on an agile team of developers maintaining an internal Salesforce Org to support organization-wide Opportunity processes."
       },
       {
         "years": "Sept 2016 - Jan 2020",
@@ -69,6 +66,11 @@
         "listItems": [
           "Developed complex custom solutions for clients, spanning student recruitment, lead and opportunity processing, territory management, custom marketing tools, event and campaign solutions, RFI forms, and general business automation.",
           "Owned and maintained several in-house accelerator applications."
+        ],
+        "projects": [
+          "Interactions for Student Recruitment",
+          "AnyAssign Territory Assignment",
+          "Go Salesforce ANT Project Generator"
         ]
       },
       {
@@ -76,7 +78,8 @@
         "title": "Business & Integration Architect Specialist - Remote",
         "company": "Accenture",
         "listItems": [
-          "Built complex custom solutions for clients in multiple industries including student financial aid automation, recruitment, event management and service as well as child welfare/foster care."
+          "Sierra-Cedar's Salesforce practice was acquired by Accenture in early 2020.",
+          "Built complex custom solutions across industries, including student financial aid automation, recruitment, event management, and child welfare/foster care systems."
         ]
       },
       {
@@ -84,14 +87,14 @@
         "title": "Senior Salesforce Developer - Remote",
         "company": "Cloud For Good",
         "listItems": [
-          "Designed, developed, and implemented custom solutions for higher education clients using Salesforce technologies including custom Lightning Web Component, Apex, Commerce Cloud, and Digital Experiences (Communities).",
-          "Played a consistent key role in client project discovery, building, deployment, post-production maintenance and client handoff."
+          "Designed, developed, and implemented custom solutions for higher education clients using Salesforce technologies including custom Lightning Web Components, Apex, Commerce Cloud, and Digital Experiences (Communities).",
+          "Played a consistent key role in client project discovery, building, deployment, post-production maintenance and client handoff.",
+          "Ongoing support for several custom higher education implementations."
         ],
         "projects": [
-          "Custom professional certificate builder and planner site.",
-          "Custom enrolled course details and Community site.",
-          "Automatic Task creation based on Opportunity progress.",
-          "Ongoing support for multiple custom higher education implementations."
+          "Professional Certificate Builder",
+          "Enrolled Course Details Community site",
+          "Automatic Task Creation for Opportunity"
         ]
       },
       {
@@ -99,18 +102,22 @@
         "title": "Senior Software Engineer - Remote",
         "company": "Built In",
         "listItems": [
-          "Led the development and implementation of Built In's new B2B Content Studio site. Content Studio is custom-built using Salesforce's Digital Experiences Cloud and lightning web components. Read more: https://employers.builtin.com/content-studio.",
+          "Led the development and implementation of Built In's new B2B [Content Studio](https://employers.builtin.com/content-studio) site. Content Studio is custom-built using Salesforce's Digital Experiences Cloud and Lightning Web Components.",
           "Owned and maintained the Salesforce development lifecycle.",
           "Collaborated closely with cross-functional teams to gather requirements, analyze user needs, and translate them into functional software.",
-          "Implemented regular updates and enhancements based on internal/external user feedback, ensuring the system remained current and aligned with evolving business requirements.",
-          "Completed multiple initiatives to improve and update old automation built using workflow, process builder, and legacy Apex triggers."
+          "Delivered regular updates and enhancements based on user feedback to keep the system aligned with business needs.",
+          "Upgraded legacy automation by refining workflows, process builders, and Apex triggers."
         ]
       },
       {
         "years": "Oct 2024 - Present",
         "title": "Staff Software Engineer - Remote",
         "company": "Built In",
-        "description": ""
+        "listItems": [
+          "Enhanced system stability and maintainability by implementing CI/CD pipeline tools, including PMD Analyzer, automated regression testing, and pull request code scanning.",
+          "Improved code documentation using JSDoc and ApexDoc to increase clarity and maintainability.",
+          "Applied a continuous refactoring approach to resolve legacy issues and align the codebase with modern best practices."
+        ]
       }
     ]
   }
