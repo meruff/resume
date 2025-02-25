@@ -44,7 +44,7 @@ export default function Info({ data }) {
           )}
         </h3>
         <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 items-center gap-0 sm:gap-10 md:gap-0 -mx-0 px-0 sm:-mx-5 sm:px-5 md:-mx-0 md:px-0 xs:bg-transparent sm:bg-white md:bg-transparent dark:xs:bg-transparent dark:sm:bg-gray-950/50 dark:md:bg-transparent sm:shadow-2xl sm:shadow-custom-light/50 dark:sm:shadow-2xl dark:sm:shadow-custom-dark/50 md:shadow-none dark:md:shadow-none">
-          <div className="h-full p-5 sm:p-0 -mx-5 md:-mx-8 lg:-mx-12 col-span-3 sm:col-span-1 md:col-span-3">
+          <div className="h-full p-5 pt-0 sm:p-0 -mx-5 md:-mx-8 lg:-mx-12 col-span-3 sm:col-span-1 md:col-span-3">
             <img
               src={matHeadshot}
               className="h-full object-cover inline-block rounded-2xl sm:rounded-l-none sm:rounded-r-2xl lg:rounded-2xl w-full shadow-2xl shadow-custom-light/50 dark:shadow-2xl dark:shadow-custom-dark/50"

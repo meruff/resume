@@ -7,7 +7,7 @@ export default function Bio({ data }) {
 
   return (
     <>
-      <div className="mx-auto max-w-2xl space-y-8 p-5 md:col-span-8 md:p-10">
+      <div className="mx-auto space-y-8 p-5 md:col-span-8 md:pl-16 lg:py-10">
         <Work data={data.work} />
         <Education data={data.education} />
         <Projects data={data.projects} />

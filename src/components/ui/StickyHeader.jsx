@@ -10,7 +10,7 @@ export default function Info({ data, isScrolled }) {
           isScrolled ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-5 lg:px-14 py-2 flex items-center justify-between">
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
             {data.firstName} {data.lastName}
           </h1>
