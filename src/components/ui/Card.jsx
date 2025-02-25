@@ -1,13 +1,4 @@
-import React from "react";
-
-interface CardProps {
-  children: React.ReactNode;
-  image?: string;
-  alt?: string;
-  link?: string;
-}
-
-export default function Card({ children, image, alt, link }: CardProps) {
+export default function Card({ children, image, alt, link }) {
   return (
     <div className="relative bg-gradient-to-br from-gray-200/25 via-gray-200/25 to-custom-light/10 dark:from-gray-900 dark:via-custom-dark/10 rounded-lg shadow-lg">
       {image &&

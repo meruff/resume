@@ -129,7 +129,7 @@
       {
         "name": "Trailhead Leaderboard API",
         "link": "https://github.com/meruff/go-trailhead-leaderboard-api",
-        "description": "A Golang app that returns public Trailhead data.",
+        "description": "A Go app that returns public Trailhead data.",
         "image": "/projects/trailblazer_matruff_rank.png"
       },
       {
@@ -147,7 +147,7 @@
       {
         "name": "Salesforce Feature Flag",
         "link": "https://github.com/meruff/salesforce-feature-flag",
-        "description": "One way to implement feature flagging in your Salesforce org.",
+        "description": "A simple way to implement feature flagging in your Salesforce org.",
         "image": "/projects/salesforce_feature_flag.png"
       }
     ]
