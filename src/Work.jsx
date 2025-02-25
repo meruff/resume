@@ -1,25 +1,13 @@
 import Card from "./components/ui/Card";
+import MarkdownToAnchor from "./components/util/MarkdownToAnchor";
 
 export default function Work({ data }) {
   if (!data) return null;
 
-  const convertMarkdownToAnchor = (markdown) => {
-    const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
-
-    return markdown.replace(markdownLinkRegex, (match, label, url) => {
-      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-    });
-  };
-
-  const renderMarkdownToAnchor = (markdown) => {
-    const htmlString = convertMarkdownToAnchor(markdown);
-    return <span dangerouslySetInnerHTML={{ __html: htmlString }} />;
-  };
-
   return (
     <>
       <div className="header-title py-2.5">
-        <h3 className="text-xl font-medium text-left">My Work Experience</h3>
+        <h3 className="text-xl font-medium text-left">Work Experience</h3>
       </div>
       <ul className="relative text-left space-y-6 pl-6 before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-custom-light/20 before:content-[''] dark:before:bg-custom-dark/20">
         {data.toReversed().map((work) => (
@@ -34,7 +22,7 @@ export default function Work({ data }) {
               <h5 className="mb-2 font-bold">{work.title}</h5>
               {work.description && (
                 <p className="text-sm/relaxed text-gray-700 dark:text-gray-400">
-                  {renderMarkdownToAnchor(work.description)}
+                  <MarkdownToAnchor markdown={work.description} />
                 </p>
               )}
               {work.listItems && (
@@ -42,7 +30,7 @@ export default function Work({ data }) {
                   <ul className="mt-4 space-y-1 space-x-2 list-disc">
                     {work.listItems.map((listItem, index) => (
                       <li key={index} className="ml-2">
-                        {renderMarkdownToAnchor(listItem)}
+                        <MarkdownToAnchor markdown={listItem} />
                       </li>
                     ))}
                   </ul>
@@ -56,7 +44,7 @@ export default function Work({ data }) {
                   <ul className="mt-4 space-y-1 space-x-2 list-disc">
                     {work.projects.map((project, index) => (
                       <li key={index} className="ml-2">
-                        {renderMarkdownToAnchor(project)}
+                        <MarkdownToAnchor markdown={project} />
                       </li>
                     ))}
                   </ul>

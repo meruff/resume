@@ -69,7 +69,6 @@
         ],
         "projects": [
           "[Interactions for Student Recruitment](https://github.com/SFDO-Community-Sprints/Interactions-for-Student-Recruitment)",
-          "[Go Salesforce ANT Project Generator](https://github.com/meruff/go-sf-ant)",
           "AnyAssign Territory Assignment"
         ]
       },
@@ -118,6 +117,38 @@
           "Improved code documentation using JSDoc and ApexDoc to increase clarity and maintainability.",
           "Applied a continuous refactoring approach to resolve legacy issues and align the codebase with modern best practices."
         ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Trailhead Leaderboard",
+        "link": "https://github.com/meruff/trailhead-leaderboard",
+        "description": "A leaderboard to track your team's progress on Salesforce Trailhead.<br/><br/>[Live Link](https://merf-dev-ed.my.salesforce-sites.com/trailheadLeaderboard)",
+        "image": "/projects/trailhead_leaderboard.png"
+      },
+      {
+        "name": "Trailhead Leaderboard API",
+        "link": "https://github.com/meruff/go-trailhead-leaderboard-api",
+        "description": "A Golang app that returns public Trailhead data.",
+        "image": "/projects/trailblazer_matruff_rank.png"
+      },
+      {
+        "name": "Go Salesforce ANT Project Generator",
+        "link": "https://github.com/meruff/go-sf-ant",
+        "description": "A simple Go app to generate a new Force.com ANT project directory and template files.",
+        "image": "/projects/build_xml.png"
+      },
+      {
+        "name": "Apex Exception Handling",
+        "link": "https://github.com/meruff/apex-exception-handling",
+        "description": "A simple framework for handling custom Apex exceptions.",
+        "image": "/projects/apex_exception_handling.png"
+      },
+      {
+        "name": "Salesforce Feature Flag",
+        "link": "https://github.com/meruff/salesforce-feature-flag",
+        "description": "One way to implement feature flagging in your Salesforce org.",
+        "image": "/projects/salesforce_feature_flag.png"
       }
     ]
   }
