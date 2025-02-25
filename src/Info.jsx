@@ -5,7 +5,7 @@ export default function Info({ data }) {
 
   return (
     <>
-      <div className="bg-gray-100 p-5 text-left dark:bg-gray-800 md:col-span-4 lg:p-10">
+      <div className="bg-gradient-to-br from-gray-100 via-custom-light/10 to-gray-200 dark:from-gray-800 dark:via-custom-dark/10 dark:to-gray-900 p-5 text-left md:col-span-4 lg:p-10 shadow-lg">
         <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl">
           {data.firstName} {data.lastName}
         </h1>
@@ -35,11 +35,11 @@ export default function Info({ data }) {
             data.company
           )}
         </h3>
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 items-center gap-0 sm:gap-10 md:gap-0 -mx-0 px-0 sm:-mx-5 sm:px-5 md:-mx-0 md:px-0 sm:bg-white dark:sm:bg-gray-950/50 md:bg-gray-100 dark:md:bg-gray-800">
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 items-center gap-0 sm:gap-10 md:gap-0 -mx-0 px-0 sm:-mx-5 sm:px-5 md:-mx-0 md:px-0 xs:bg-transparent sm:bg-white md:bg-transparent dark:xs:bg-transparent dark:sm:bg-gray-950/50 dark:md:bg-transparent sm:shadow-2xl sm:shadow-custom-light/50 dark:sm:shadow-2xl dark:sm:shadow-custom-dark/50 md:shadow-none dark:md:shadow-none">
           <div className="h-full -mx-5 md:-mx-8 lg:-mx-12 col-span-3 sm:col-span-1 md:col-span-3">
             <img
               src={matHeadshot}
-              className="h-full object-cover inline-block sm:rounded-r-2xl lg:rounded-2xl w-full shadow-2xl shadow-custom-light/50 dark:shadow-2lg dark:shadow-custom-dark/50"
+              className="h-full object-cover inline-block sm:rounded-r-2xl lg:rounded-2xl w-full shadow-2xl shadow-custom-light/50 dark:shadow-2xl dark:shadow-custom-dark/50"
               alt="Mat Ruff photo"
             />
           </div>

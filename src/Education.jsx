@@ -1,3 +1,5 @@
+import Card from "./components/ui/Card";
+
 export default function Education({ data }) {
   if (!data) return null;
 
@@ -12,13 +14,15 @@ export default function Education({ data }) {
             key={education.degree}
             className="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-custom-light/50 before:bg-white before:content-[''] dark:before:border-custom-dark/75 dark:before:bg-gray-950"
           >
-            <h4 className="text-sm font-semibold text-custom-light dark:text-custom-dark">
-              {education.years}
-            </h4>
-            <h5 className="mb-2 font-bold">{education.degree}</h5>
-            <p className="text-sm/relaxed text-gray-700 dark:text-gray-300">
-              {education.school}
-            </p>
+            <Card>
+              <h4 className="text-sm font-semibold text-custom-light dark:text-custom-dark">
+                {education.years}
+              </h4>
+              <h5 className="mb-2 font-bold">{education.degree}</h5>
+              <p className="text-sm/relaxed text-gray-700 dark:text-gray-300">
+                {education.school}
+              </p>
+            </Card>
           </li>
         ))}
       </ul>
