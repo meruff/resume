@@ -1,4 +1,5 @@
 import matHeadshot from "./assets/mat-headshot.png";
+import BoxIcon from "./components/ui/BoxIcon";
 
 export default function Info({ data }) {
   if (!data) return null;
@@ -13,16 +14,7 @@ export default function Info({ data }) {
           {data.title}
         </h2>
         <h3 className="flex items-center gap-1 mt-1 text-xl text-custom-light dark:text-custom-dark">
-          <box-icon
-            name="buildings"
-            color="#0B979E"
-            className="inline-block dark:hidden"
-          ></box-icon>
-          <box-icon
-            name="buildings"
-            color="#38B2AC"
-            className="hidden dark:inline-block"
-          ></box-icon>
+          <BoxIcon name="buildings" colorLight="#0B979E" colorDark="#38B2AC" />
           {data.companyHref ? (
             <a
               href={data.companyHref}
@@ -67,7 +59,7 @@ export default function Info({ data }) {
           <>
             <div className="header-title py-2.5 my-6">
               <h3 className="text-xl font-medium text-left">
-                Skills &amp; Expertise
+                My Skills &amp; Expertise
               </h3>
             </div>
             <ul className="mt-4 ml-2 space-y-1 space-x-2 list-disc">
@@ -100,16 +92,7 @@ export default function Info({ data }) {
         </div>
         <div className="mt-4 space-y-4">
           <div className="flex items-center gap-5">
-            <box-icon
-              name="envelope"
-              color="#0B979E"
-              className="inline dark:hidden"
-            ></box-icon>
-            <box-icon
-              name="envelope"
-              color="#38B2AC"
-              className="hidden dark:inline"
-            ></box-icon>
+            <BoxIcon name="envelope" colorLight="#0B979E" colorDark="#38B2AC" />
             <a
               href="mailto:mathew.ruff@gmail.com"
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
@@ -118,18 +101,12 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <box-icon
+            <BoxIcon
               name="github"
               type="logo"
-              color="#0B979E"
-              className="inline dark:hidden"
-            ></box-icon>
-            <box-icon
-              name="github"
-              type="logo"
-              color="#38B2AC"
-              className="hidden dark:inline"
-            ></box-icon>
+              colorLight="#0B979E"
+              colorDark="#38B2AC"
+            />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://github.com/meruff"
@@ -138,18 +115,12 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <box-icon
+            <BoxIcon
               name="linkedin-square"
               type="logo"
-              color="#0B979E"
-              className="inline dark:hidden"
-            ></box-icon>
-            <box-icon
-              name="linkedin-square"
-              type="logo"
-              color="#38B2AC"
-              className="hidden dark:inline"
-            ></box-icon>
+              colorLight="#0B979E"
+              colorDark="#38B2AC"
+            />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://linkedin.com/in/mathewruff"
@@ -158,18 +129,12 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <box-icon
+            <BoxIcon
               name="cloud"
               type="solid"
-              color="#0B979E"
-              className="inline dark:hidden"
-            ></box-icon>
-            <box-icon
-              name="cloud"
-              type="solid"
-              color="#38B2AC"
-              className="hidden dark:inline"
-            ></box-icon>
+              colorLight="#0B979E"
+              colorDark="#38B2AC"
+            />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://trailblazer.me/id/matruff"
@@ -184,18 +149,13 @@ export default function Info({ data }) {
             download="Mathew_Ruff_Resume.pdf"
             className="inline-flex items-center px-6 py-3 text-white bg-custom-light rounded-lg shadow-md hover:bg-custom-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-custom-light focus:ring-opacity-75 dark:bg-custom-dark dark:hover:bg-custom-light dark:text-gray-900 dark:hover:text-gray-900"
           >
-            <box-icon
+            <BoxIcon
               name="file-pdf"
               type="solid"
-              color="#fff"
-              className="mr-2 inline dark:hidden"
-            ></box-icon>
-            <box-icon
-              name="file-pdf"
-              type="solid"
-              color="#111827"
-              className="mr-2 hidden dark:inline"
-            ></box-icon>
+              colorLight="#fff"
+              colorDark="#111827"
+              additionalClasses="mr-2"
+            />
             Download Resume
           </a>
         </div>
