@@ -6,7 +6,7 @@ export default function Info({ data, isScrolled }) {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 right-0 z-50 bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform ease-in-out duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform duration-300 ${
           isScrolled ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
