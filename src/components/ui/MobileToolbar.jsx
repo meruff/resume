@@ -9,12 +9,18 @@ export default function MobileToolbar() {
 
   const handleScroll = useCallback(() => {
     if (!isLinkClicked) {
-      if (window.scrollY > lastScrollY) {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollY + windowHeight >= documentHeight) {
+        setIsVisible(false);
+      } else if (scrollY > lastScrollY) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      setLastScrollY(window.scrollY);
+      setLastScrollY(scrollY);
     }
   }, [lastScrollY, isLinkClicked]);
 
