@@ -30,7 +30,7 @@ export default function Info({ data }) {
           {data.title}
         </h2>
         <h3 className="flex items-center gap-1 mt-1 text-xl text-custom-light dark:text-custom-dark">
-          <BoxIcon name="buildings" colorLight="#0B979E" colorDark="#38B2AC" />
+          <BoxIcon name="buildings" />
           {data.companyHref ? (
             <a
               href={data.companyHref}
@@ -51,7 +51,10 @@ export default function Info({ data }) {
               alt="Mat Ruff photo"
             />
           </div>
-          <p className="py-0 sm:py-10 md:py-0 mt-10 sm:mt-0 md:mt-10 col-span-3 sm:col-span-2 md:col-span-3 font-semibold text-xl md:text-lg lg:text-xl text-balance leading-relaxed text-gray-700 dark:text-gray-300">
+          <p
+            id="description"
+            className="py-0 sm:py-10 md:py-0 mt-10 sm:mt-0 md:mt-10 col-span-3 sm:col-span-2 md:col-span-3 font-semibold text-xl md:text-lg lg:text-xl text-balance leading-relaxed text-gray-700 dark:text-gray-300"
+          >
             {data.description}
           </p>
         </div>
@@ -106,7 +109,7 @@ export default function Info({ data }) {
         </div>
         <div className="mt-4 space-y-4">
           <div className="flex items-center gap-5">
-            <BoxIcon name="envelope" colorLight="#0B979E" colorDark="#38B2AC" />
+            <BoxIcon name="envelope" />
             <a
               href="mailto:mathew.ruff@gmail.com"
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
@@ -115,12 +118,7 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <BoxIcon
-              name="github"
-              type="logo"
-              colorLight="#0B979E"
-              colorDark="#38B2AC"
-            />
+            <BoxIcon name="github" type="logo" />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://github.com/meruff"
@@ -129,12 +127,7 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <BoxIcon
-              name="linkedin-square"
-              type="logo"
-              colorLight="#0B979E"
-              colorDark="#38B2AC"
-            />
+            <BoxIcon name="linkedin-square" type="logo" />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://linkedin.com/in/mathewruff"
@@ -143,12 +136,7 @@ export default function Info({ data }) {
             </a>
           </div>
           <div className="flex items-center gap-5">
-            <BoxIcon
-              name="cloud"
-              type="solid"
-              colorLight="#0B979E"
-              colorDark="#38B2AC"
-            />
+            <BoxIcon name="cloud" type="solid" />
             <a
               className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75"
               href="https://trailblazer.me/id/matruff"

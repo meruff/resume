@@ -4,8 +4,8 @@ import React from "react";
 export default function BoxIcon({
   name,
   type,
-  colorLight,
-  colorDark,
+  colorLight = "#0B979E",
+  colorDark = "#38B2AC",
   size,
   additionalClasses = "",
 }) {

@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Info from "./Info";
 import Bio from "./Bio";
+import MobileToolbar from "./components/ui/MobileToolbar";
 
 function App() {
   const [data, setData] = useState({});
@@ -25,6 +26,7 @@ function App() {
             <Info data={data.info} />
             <Bio data={data.bio} />
           </div>
+          <MobileToolbar />
         </div>
       </div>
     </>

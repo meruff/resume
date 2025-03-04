@@ -18,12 +18,7 @@ export default function Info({ data, isScrolled }) {
             {data.title}
           </h2>
           <h3 className="hidden sm:flex items-center gap-1 text-md font-normal text-gray-500 dark:text-gray-400">
-            <BoxIcon
-              name="buildings"
-              size="sm"
-              colorLight="#0B979E"
-              colorDark="#38B2AC"
-            />
+            <BoxIcon name="buildings" size="sm" />
             {data.companyHref ? (
               <a
                 href={data.companyHref}
