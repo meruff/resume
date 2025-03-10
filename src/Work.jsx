@@ -30,8 +30,8 @@ export default function Work({ data }) {
               {work.listItems && (
                 <div className="text-sm/relaxed text-gray-700 dark:text-gray-400">
                   <ul className="mt-4 space-y-1 space-x-2 list-disc">
-                    {work.listItems.map((listItem, index) => (
-                      <li key={index} className="ml-2">
+                    {work.listItems.map((listItem) => (
+                      <li key={listItem} className="ml-2">
                         <MarkdownToAnchor markdown={listItem} />
                       </li>
                     ))}
@@ -44,8 +44,8 @@ export default function Work({ data }) {
                     Notable Projects
                   </h2>
                   <ul className="mt-4 space-y-1 space-x-2 list-disc">
-                    {work.projects.map((project, index) => (
-                      <li key={index} className="ml-2">
+                    {work.projects.map((project) => (
+                      <li key={project} className="ml-2">
                         <MarkdownToAnchor markdown={project} />
                       </li>
                     ))}
