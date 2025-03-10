@@ -1,10 +1,17 @@
-export default function Card({ children, image, alt, link }) {
+export default function Card({
+  children,
+  image,
+  alt,
+  link,
+  lazyLoading = true,
+}) {
   return (
     <div className="relative bg-gradient-to-br from-gray-200/25 via-gray-200/25 to-custom-light/10 dark:from-gray-900 dark:via-custom-dark/10 rounded-lg shadow-lg">
       {image &&
         (link ? (
           <a href={link} target="_blank" rel="noopener noreferrer">
             <img
+              loading={lazyLoading ? "lazy" : "eager"}
               src={image}
               alt={alt}
               className="w-full h-52 object-cover object-top rounded-t-lg"
@@ -12,6 +19,7 @@ export default function Card({ children, image, alt, link }) {
           </a>
         ) : (
           <img
+            loading={lazyLoading ? "lazy" : "eager"}
             src={image}
             alt={alt}
             className="w-full h-52 object-cover object-top rounded-t-lg"

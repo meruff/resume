@@ -64,11 +64,12 @@
         "title": "Senior Salesforce Developer - Tempe, AZ",
         "company": "Sierra-Cedar, Inc.",
         "listItems": [
-          "Developed complex custom solutions for clients, spanning student recruitment, lead and opportunity processing, territory management, custom marketing tools, event and campaign solutions, RFI forms, and general business automation.",
+          "Engineered sophisticated, tailored solutions for clients, encompassing student recruitment, lead and opportunity management, territory management, bespoke marketing tools, event and campaign strategies, RFI form automation, and comprehensive business process automation.",
           "Owned and maintained several in-house accelerator applications."
         ],
         "projects": [
           "[Interactions for Student Recruitment](https://github.com/SFDO-Community-Sprints/Interactions-for-Student-Recruitment)",
+          "[Interactions for Student Recruitment Refactor](https://github.com/meruff/Interactions-for-Student-Recruitment/tree/interactions-v3)",
           "AnyAssign Territory Assignment"
         ]
       },

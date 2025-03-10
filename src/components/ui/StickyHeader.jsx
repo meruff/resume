@@ -1,6 +1,6 @@
 import BoxIcon from "./BoxIcon";
 
-export default function Info({ data, isScrolled }) {
+export default function StickyHeader({ data, isScrolled }) {
   if (!data) return null;
 
   return (

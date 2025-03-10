@@ -66,8 +66,8 @@ export default function Info({ data }) {
               </h3>
             </div>
             <ul className="mt-4 ml-2 space-y-1 space-x-2 list-disc">
-              {data.salesforceCertifications.map((certification, index) => (
-                <li key={index} className="ml-2">
+              {data.salesforceCertifications.map((certification) => (
+                <li key={certification} className="ml-2">
                   {certification}
                 </li>
               ))}
@@ -82,8 +82,8 @@ export default function Info({ data }) {
               </h3>
             </div>
             <ul className="mt-4 ml-2 space-y-1 space-x-2 list-disc">
-              {data.capabilities.map((capability, index) => (
-                <li key={index} className="ml-2">
+              {data.capabilities.map((capability) => (
+                <li key={capability} className="ml-2">
                   {capability}
                 </li>
               ))}
