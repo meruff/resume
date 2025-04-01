@@ -7,11 +7,11 @@ export default function Projects({ data }) {
   return (
     <>
       <div className="header-title py-2.5">
-        <h3 id="projects" className="text-xl font-medium text-left">
+        <h3 id="projects" className="text-left text-xl font-medium">
           Projects
         </h3>
       </div>
-      <ul className="relative text-left space-y-6 pl-6 before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-custom-light/20 before:content-[''] dark:before:bg-custom-dark/20">
+      <ul className="relative space-y-6 pl-6 text-left before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-custom-light/20 before:content-[''] dark:before:bg-custom-dark/20">
         {data.map((project) => (
           <li
             key={project.name}

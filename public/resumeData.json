@@ -2,9 +2,9 @@
   "info": {
     "firstName": "Mat",
     "lastName": "Ruff",
-    "title": "Staff Software Engineer",
-    "company": "Built In",
-    "companyHref": "https://www.builtin.com",
+    "title": "Senior Software Engineer",
+    "company": "Science Exchange",
+    "companyHref": "https://www.scienceexchange.com/s/",
     "description": "Hi, I'm Mat 👋. I'm a Salesforce engineer based in Phoenix, Arizona. I have six Salesforce certifications and over ten years of experience as both a consultant and in-house developer. I specialize in building custom business solutions, seamless integrations, and mobile-friendly Lightning UI for the Salesforce platform.",
     "salesforceCertifications": [
       "Platform Developer I & II",
@@ -110,7 +110,7 @@
         ]
       },
       {
-        "years": "Oct 2024 - Present",
+        "years": "Oct 2024 - Apr 2025",
         "title": "Staff Software Engineer - Remote",
         "company": "Built In",
         "listItems": [
@@ -118,6 +118,12 @@
           "Improved code documentation using JSDoc and ApexDoc to increase clarity and maintainability.",
           "Applied a continuous refactoring approach to resolve legacy issues and align the codebase with modern best practices."
         ]
+      },
+      {
+        "years": "Apr 2025 - Present",
+        "title": "Senior Software Engineer - Remote",
+        "company": "Science Exchange",
+        "description": "Science Exchange redefines how life sciences companies work with suppliers."
       }
     ],
     "projects": [
