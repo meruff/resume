@@ -3,10 +3,10 @@ import React from "react";
 
 export default function BoxIcon({
   name,
-  type,
+  type = "regular",
   colorLight = "#0B979E",
   colorDark = "#38B2AC",
-  size,
+  size = "sm",
   additionalClasses = "",
 }) {
   return (
