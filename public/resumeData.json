@@ -5,7 +5,7 @@
     "title": "Senior Software Engineer",
     "company": "Science Exchange",
     "companyHref": "https://www.scienceexchange.com/s/",
-    "description": "Hi, I'm Mat 👋. I'm a Salesforce engineer based in Phoenix, Arizona. I have six Salesforce certifications and over ten years of experience as both a consultant and in-house developer. I specialize in building custom business solutions, seamless integrations, and mobile-friendly Lightning UI for the Salesforce platform.",
+    "description": "<span class='text-xl font-semibold'>Hi, I'm Mat 👋</span> I'm a software engineer from Phoenix, AZ who started in Salesforce and never stopped picking up new things.<br/><br/>I spent the first decade of my career going deep on the Salesforce platform — 6x certified, building custom UIs, integrations, and automation. Lately I've had the chance to work across a broader stack, and what keeps me curious right now is how AI is changing the role of the engineer — less implementer, more director. The craft is shifting toward knowing what to build, how to break it down, and how to guide something toward the right answer rather than just writing every line yourself.",
     "salesforceCertifications": [
       "Platform Developer I & II",
       "JavaScript Developer I",
@@ -13,30 +13,121 @@
       "Education Cloud Consultant",
       "Administrator"
     ],
-    "capabilities": [
-      "Salesforce Development: Apex, Lightning Web Components, Visualforce SOQL/SOSL",
-      "Programming: JavaScript/TypeScript, React, Golang",
-      "Integration & APIs: Salesforce APIs,  Integration, and Web Services",
-      "DevOps & Workflow: CI/CD, Agile, SDLC, SFDX, CumulusCI, Gearset, JIRA"
+    "technologies": [
+      {
+        "title": "Salesforce",
+        "description": "Backend, Frontend, APIs, Integrations, SOQL/SOSL, Architecture, Declarative"
+      },
+      {
+        "title": "AWS",
+        "description": "DynamoDB, S3, Lambda, Step Functions, CloudFront, EventBridge"
+      },
+      {
+        "title": "Languages",
+        "description": "Apex, SQL, TypeScript"
+      },
+      {
+        "title": "Frameworks",
+        "description": "Lightning Web Components, SST, Hono, Zod, React, Remix, Tailwind"
+      },
+      {
+        "title": "AI",
+        "description": "Anthropic SDK, LangChain, LangSmith, MCP"
+      }
     ],
     "tools": [
-      "Development Environment: WebStorm + Illuminated Cloud 2, VSCode",
-      "VCS & Code Quality: Git, GitHub, PMD Analyzer",
-      "AI: Copilot, SonarQube, CodeRabbit",
-      "Workflow: Raycast"
+      {
+        "name": "Cursor",
+        "color": "slate",
+        "link": "https://cursor.com/"
+      },
+      {
+        "name": "GitHub",
+        "color": "fuchsia",
+        "link": "https://github.com/"
+      },
+      {
+        "name": "Claude Code",
+        "color": "yellow",
+        "link": "https://claude.com/product/claude-code"
+      },
+      {
+        "name": "Claude Skills",
+        "color": "pink",
+        "link": "https://claude.com/skills"
+      },
+      {
+        "name": "Raycast",
+        "color": "red",
+        "link": "https://www.raycast.com"
+      },
+      {
+        "name": "Warp",
+        "color": "teal",
+        "link": "https://warp.dev"
+      },
+      {
+        "name": "Obsidian",
+        "color": "indigo",
+        "link": "https://obsidian.md"
+      },
+      {
+        "name": "Shottr",
+        "color": "orange",
+        "link": "https://shottr.cc"
+      },
+      {
+        "name": "JIRA",
+        "color": "sky",
+        "link": "https://www.atlassian.com/software/jira"
+      },
+      {
+        "name": "Zoom",
+        "color": "blue",
+        "link": "https://www.zoom.com"
+      },
+      {
+        "name": "Slack",
+        "color": "lime",
+        "link": "https://slack.com"
+      },
+      {
+        "name": "Oh My Zsh",
+        "color": "cyan",
+        "link": "https://ohmyz.sh"
+      },
+      {
+        "name": "Boop",
+        "color": "amber",
+        "link": "https://boop.okat.best"
+      },
+      {
+        "name": "PMD",
+        "color": "emerald",
+        "link": "https://pmd.github.io"
+      },
+      {
+        "name": "Prettier",
+        "color": "purple",
+        "link": "https://prettier.io"
+      }
     ]
   },
   "bio": {
     "education": [
       {
         "years": "2015-2016",
+        "icon": "/companies/asu_logo.jpeg",
         "degree": "M.S. Information Management",
-        "school": "W.P. Carey School of Business at Arizona State University, Tempe, AZ"
+        "school": "Arizona State University",
+        "college": "W.P. Carey School of Business, Tempe, AZ"
       },
       {
         "years": "2010-2013",
+        "icon": "/companies/asu_logo.jpeg",
         "degree": "B.S. Computer Information Systems",
-        "school": "W.P. Carey School of Business at Arizona State University, Tempe, AZ"
+        "school": "Arizona State University",
+        "college": "W.P. Carey School of Business, Tempe, AZ"
       }
     ],
     "work": [
@@ -44,6 +135,7 @@
         "years": "Nov 2013 - May 2016",
         "title": "Systems Analyst - Tempe, AZ",
         "company": "Arizona State University",
+        "icon": "/companies/asu_logo.jpeg",
         "description": "Developed and maintained custom Visualforce pages for various user interfaces, including Recruitment, Service, Corporate Relations, and internal users. Main project was a custom student Service Center portal using Salesforce Communities, Visualforce, Apex, Bootstrap, and jQuery.",
         "projects": [
           "Student Service Center",
@@ -57,12 +149,14 @@
         "years": "Jun 2016 - Aug 2016",
         "title": "Engineer I - Scottsdale, AZ",
         "company": "American Express Global Business Travel",
+        "icon": "/companies/gbt_logo.jpeg",
         "description": "Worked on an agile team of developers maintaining an internal Salesforce Org to support organization-wide Opportunity processes."
       },
       {
         "years": "Sept 2016 - Jan 2020",
         "title": "Senior Salesforce Developer - Tempe, AZ",
         "company": "Sierra-Cedar, Inc.",
+        "icon": "/companies/sierra_cedar_logo.jpeg",
         "listItems": [
           "Engineered sophisticated, tailored solutions for clients, encompassing student recruitment, lead and opportunity management, territory management, bespoke marketing tools, event and campaign strategies, RFI form automation, and comprehensive business process automation.",
           "Owned and maintained several in-house accelerator applications."
@@ -77,6 +171,7 @@
         "years": "Feb 2020 - Jul 2021",
         "title": "Business & Integration Architect Specialist - Remote",
         "company": "Accenture",
+        "icon": "/companies/accenture_logo.jpeg",
         "listItems": [
           "Sierra-Cedar's Salesforce practice was acquired by Accenture in early 2020.",
           "Built complex custom solutions across industries, including student financial aid automation, recruitment, event management, and child welfare/foster care systems."
@@ -86,6 +181,7 @@
         "years": "Jul 2021 - Aug 2022",
         "title": "Senior Salesforce Developer - Remote",
         "company": "Cloud For Good",
+        "icon": "/companies/cloud_for_good_logo.jpeg",
         "listItems": [
           "Designed, developed, and implemented custom solutions for higher education clients using Salesforce technologies including custom Lightning Web Components, Apex, Commerce Cloud, and Digital Experiences (Communities).",
           "Played a consistent key role in client project discovery, building, deployment, post-production maintenance and client handoff.",
@@ -101,8 +197,9 @@
         "years": "Aug 2022 - Oct 2024",
         "title": "Senior Software Engineer - Remote",
         "company": "Built In",
+        "icon": "/companies/built_in_logo.jpeg",
         "listItems": [
-          "Led the development and implementation of Built In's new B2B [Content Studio](https://employers.builtin.com/content-studio) site. Content Studio is custom-built using Salesforce's Digital Experiences Cloud and Lightning Web Components.",
+          "Led development of [Content Studio](https://employers.builtin.com/content-studio), Built In's new B2B site built on Salesforce Digital Experiences Cloud and Lightning Web Components.",
           "Owned and maintained the Salesforce development lifecycle.",
           "Collaborated closely with cross-functional teams to gather requirements, analyze user needs, and translate them into functional software.",
           "Delivered regular updates and enhancements based on user feedback to keep the system aligned with business needs.",
@@ -113,9 +210,10 @@
         "years": "Oct 2024 - Apr 2025",
         "title": "Staff Software Engineer - Remote",
         "company": "Built In",
+        "icon": "/companies/built_in_logo.jpeg",
         "listItems": [
-          "Enhanced system stability and maintainability by implementing CI/CD pipeline tools, including PMD Analyzer, automated regression testing, and pull request code scanning.",
-          "Improved code documentation using JSDoc and ApexDoc to increase clarity and maintainability.",
+          "Strengthened code quality by introducing PMD static analysis, automated regression testing, and pull request scanning into the CI/CD pipeline.",
+          "Improved code documentation using JSDoc and ApexDoc.",
           "Applied a continuous refactoring approach to resolve legacy issues and align the codebase with modern best practices."
         ]
       },
@@ -123,7 +221,16 @@
         "years": "Apr 2025 - Present",
         "title": "Senior Software Engineer - Remote",
         "company": "Science Exchange",
-        "description": "Science Exchange powers R&D outsourcing for the world’s top life sciences companies."
+        "icon": "/companies/science_exchange_logo.jpeg",
+        "listItems": [
+          "Built and maintained Science AI — an AI-powered procurement assistant with conversational history, quote comparison, Help Center search, support case creation, and a Code Mode for structured data processing tasks.",
+          "Built and hardened the Science Exchange MCP server — reorganized tool structure, added developer portal docs, and submitted for listing in the Anthropic MCP Directory.",
+          "Built Workflow Builder — a no-code UI powering approval chains, notifications, and custom form logic for enterprise procurement. Delivered the MVP and expanded it with new trigger types, condition support, and custom field criteria.",
+          "Expanded webhooks and developer portal infrastructure — new event types, updated OpenAPI specs, and resolved production gaps for enterprise API consumers.",
+          "Supported enterprise data transfer operations — S3 and SFTP transfers between enterprise customers and their supplier networks.",
+          "Migrated platform pages to React and resolved filtering, search, and activity log bugs for enterprise customers.",
+          "Contributed to a library of custom Claude Code skills and practiced spec-driven development — commit generation, PR creation, code review, and S3 transfer automation."
+        ]
       }
     ],
     "projects": [
