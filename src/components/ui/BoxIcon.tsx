@@ -1,6 +1,9 @@
 // @ts-nocheck
 import React from "react";
 
+const PREFIX = { regular: "bx-", solid: "bxs-", logo: "bxl-" };
+const SIZE_CLASS = { xs: "bx-xs", sm: "bx-sm", md: "bx-md", lg: "bx-lg" };
+
 export default function BoxIcon({
   name,
   type = "regular",
@@ -9,26 +12,22 @@ export default function BoxIcon({
   size = "sm",
   additionalClasses = "",
 }) {
+  const iconClass = ["bx", `${PREFIX[type]}${name}`, SIZE_CLASS[size]]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <>
-      <span className={`inline-flex dark:hidden ${additionalClasses}`}>
-        <box-icon
-          name={name}
-          type={type}
-          size={size}
-          color={colorLight}
-          className="block"
-        ></box-icon>
-      </span>
-      <span className={`hidden dark:inline-flex ${additionalClasses}`}>
-        <box-icon
-          name={name}
-          type={type}
-          size={size}
-          color={colorDark}
-          className="block"
-        ></box-icon>
-      </span>
+      <i
+        className={`${iconClass} inline-block align-middle dark:hidden ${additionalClasses}`}
+        style={{ color: colorLight }}
+        aria-hidden
+      />
+      <i
+        className={`${iconClass} hidden align-middle dark:inline-block ${additionalClasses}`}
+        style={{ color: colorDark }}
+        aria-hidden
+      />
     </>
   );
 }

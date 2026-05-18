@@ -15,7 +15,7 @@ export default function Work({ data }) {
       <ul className="relative space-y-6 pl-6 text-left before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-1 before:rounded-full before:bg-custom-light/20 before:content-[''] dark:before:bg-custom-dark/20">
         {data.toReversed().map((work) => (
           <li
-            key={work.title}
+            key={`${work.company}-${work.years}`}
             className="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-custom-light/50 before:bg-white before:content-[''] dark:before:border-custom-dark/75 dark:before:bg-gray-950"
           >
             <Card>
