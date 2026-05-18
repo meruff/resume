@@ -11,20 +11,24 @@ export default function BoxIcon({
 }) {
   return (
     <>
-      <box-icon
-        name={name}
-        type={type}
-        size={size}
-        color={colorLight}
-        className={`inline-block dark:hidden ${additionalClasses}`}
-      ></box-icon>
-      <box-icon
-        name={name}
-        type={type}
-        size={size}
-        color={colorDark}
-        className={`hidden dark:inline-block ${additionalClasses}`}
-      ></box-icon>
+      <span className={`inline-flex dark:hidden ${additionalClasses}`}>
+        <box-icon
+          name={name}
+          type={type}
+          size={size}
+          color={colorLight}
+          className="block"
+        ></box-icon>
+      </span>
+      <span className={`hidden dark:inline-flex ${additionalClasses}`}>
+        <box-icon
+          name={name}
+          type={type}
+          size={size}
+          color={colorDark}
+          className="block"
+        ></box-icon>
+      </span>
     </>
   );
 }

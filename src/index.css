@@ -6,7 +6,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -55,29 +55,32 @@ h1 {
   border-radius: 5px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+/* Light theme — applies when .dark is removed (e.g. initThemeFromStorage + toggle) */
+html:not(.dark) {
+  color-scheme: light;
+}
 
-  a {
-    color: #0b979e;
-  }
+html:not(.dark) :root {
+  color: #213547;
+  background-color: #ffffff;
+}
 
-  a:hover {
-    color: #086f75;
-  }
+html:not(.dark) a:not([class*="bg-custom"]) {
+  color: #0b979e;
+}
 
-  button {
-    background-color: #f9f9f9;
-  }
+html:not(.dark) a:not([class*="bg-custom"]):hover {
+  color: #086f75;
+}
 
-  body {
-    background-color: #ffffff;
-  }
+html:not(.dark) button {
+  background-color: #f9f9f9;
+}
 
-  .header-title:after {
-    background-color: #0b979e;
-  }
+html:not(.dark) body {
+  background-color: #ffffff;
+}
+
+html:not(.dark) .header-title:after {
+  background-color: #0b979e;
 }

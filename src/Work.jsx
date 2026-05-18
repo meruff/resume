@@ -1,4 +1,5 @@
 import Card from "./components/ui/Card";
+import OrgLogo from "./components/ui/OrgLogo";
 import MarkdownToAnchor from "./components/util/MarkdownToAnchor";
 
 export default function Work({ data }) {
@@ -20,7 +21,7 @@ export default function Work({ data }) {
             <Card>
               <h4 className="mb-2 flex flex-wrap items-center gap-2 text-sm font-semibold text-custom-light dark:text-custom-dark">
                 <div className="flex gap-2">
-                  <img src={work.icon} className="inline h-6 w-6 rounded" />
+                  <OrgLogo src={work.icon} alt={`${work.company} logo`} />
                   <i className="text-base font-bold">{work.company}</i>
                 </div>
                 <span className="hidden md:inline-block">{"//"}</span>

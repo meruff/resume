@@ -1,4 +1,5 @@
 import Card from "./components/ui/Card";
+import OrgLogo from "./components/ui/OrgLogo";
 
 export default function Education({ data }) {
   if (!data) return null;
@@ -19,9 +20,9 @@ export default function Education({ data }) {
             <Card>
               <h4 className="mb-2 flex flex-wrap items-center gap-2 text-sm font-semibold text-custom-light dark:text-custom-dark">
                 <div className="flex gap-2">
-                  <img
+                  <OrgLogo
                     src={education.icon}
-                    className="inline h-6 w-6 rounded"
+                    alt={`${education.school} logo`}
                   />
                   <i className="text-base font-bold">{education.school}</i>
                 </div>
